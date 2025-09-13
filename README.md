@@ -1,6 +1,6 @@
-## WA3 Continuity Equation &amp; Bernoulli's Equation
-#This program is designed to teach Physics: Fluids
-#p5.js link: https://editor.p5js.org/Exp/sketches/72Q2OF-7t
+# WA3 Continuity Equation &amp; Bernoulli's Equation
+This program is designed to teach Physics: Fluids
+p5.js link: https://editor.p5js.org/Exp/sketches/72Q2OF-7t
 
 
 For those who do not know,
