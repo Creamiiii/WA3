@@ -1,5 +1,6 @@
 class Continuity {
   constructor() {
+    // Create sliders
     this.A1_SLIDER = createSlider(10, 100, 55, 1);
     this.A1_SLIDER.position(50, 500);
     this.A2_SLIDER = createSlider(10, 100, 55, 1);
@@ -15,12 +16,12 @@ class Continuity {
     this.v2 = this.v2_SLIDER.value();
 
     this.count = 0;
-
     this.dVariable = "v2";
   }
   iterate() {
     background(255);
 
+    // Show sliders
     this.A1_SLIDER.show();
     this.A2_SLIDER.show();
     this.v1_SLIDER.show();
@@ -176,6 +177,7 @@ class Continuity {
       300 + this.A2
     );
 
+    //Draw particles / delete particles
     for (let index = particles1.length - 1; index > -1; index--) {
       if (particles1[index].x >= 700) {
         particles1.splice(index, 1);
@@ -185,6 +187,7 @@ class Continuity {
     }
   }
   init() {
+    // Hide sliders, reset variables and sliders
     this.A1_SLIDER.hide();
     this.A2_SLIDER.hide();
     this.v1_SLIDER.hide();
