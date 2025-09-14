@@ -15,7 +15,7 @@ class Bernoulli {
     this.h2_SLIDER.position(350, 450);
     this.rho_SLIDER = createSlider(0.5, 1.5, 1, 0.1);
     this.rho_SLIDER.position(50, 400);
-    this.g_SLIDER = createSlider(0.5, 5, 2.75, 0.05);
+    this.g_SLIDER = createSlider(1, 3, 2, 0.05);
     this.g_SLIDER.position(50, 450);
 
     // Initialize variables
