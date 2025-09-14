@@ -1,4 +1,5 @@
 class Particle2 {
+  //For Bernoulli's
   constructor() {
     this.x = 100;
     this.y = 300 - HARD_MODE.h1;
