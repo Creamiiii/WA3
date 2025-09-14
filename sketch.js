@@ -1,7 +1,7 @@
-let EASY_MODE;
-let HARD_MODE;
-let START_PAGE;
-let SUMMARY_PAGE;
+let EASY_MODE; // Page 3
+let HARD_MODE; // Page 4
+let START_PAGE; // Page 1
+let SUMMARY_PAGE; // Page 2
 let currentMode = "START";
 let particles1 = [];
 let particles2 = [];
@@ -80,6 +80,8 @@ function mousePressed() {
 }
 
 function keyPressed() {
+  //Change page
+  let previousMode = currentMode;
   if (event.keyCode === 39) {
     if (currentMode === "EASY") {
       currentMode = "HARD";
@@ -88,10 +90,6 @@ function keyPressed() {
     } else if (currentMode === "SUMMARY") {
       currentMode = "EASY";
     }
-    EASY_MODE.init();
-    HARD_MODE.init();
-    particles1 = [];
-    particles2 = [];
   }
   if (event.keyCode === 37) {
     if (currentMode === "SUMMARY") {
@@ -101,7 +99,9 @@ function keyPressed() {
     } else if (currentMode === "EASY") {
       currentMode = "SUMMARY";
     }
-    EASY_MODE.init();
+  }
+  if (currentMode !== previousMode) {
+    EASY_MODE.init(); //Reset variables
     HARD_MODE.init();
     particles1 = [];
     particles2 = [];
