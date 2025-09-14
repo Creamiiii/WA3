@@ -1,4 +1,5 @@
 class Particle1 {
+  // For continuity
   constructor() {
     this.x = 100;
     this.y = 300;
