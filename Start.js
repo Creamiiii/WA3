@@ -1,4 +1,4 @@
-class Start {
+class Start { //Start page
   display() {
     background(255);
     textAlign(CENTER, CENTER);
