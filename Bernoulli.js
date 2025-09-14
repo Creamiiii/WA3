@@ -224,19 +224,29 @@ class Bernoulli {
     text("h1", 620, 480);
 
     // Headings
-    text("Bernoulli's Equation", 400, 40);
-    text("P₁ + 0.5ρv₁² + ρgh₁ = P₂ + 0.5ρv₂² + ρgh₂", 400, 60);
+    text("Bernoulli's Equation", 400, 20);
+    text("P₁ + 0.5ρv₁² + ρgh₁ = P₂ + 0.5ρv₂² + ρgh₂", 400, 40);
     text(
       "*Note: In this simulator, A (Cross-sectional area of the tube) is perceived",
       400,
-      80
+      60
     );
     text(
       "to be directly proportionate to h (Height of the tube), as width is assumed constant",
       400,
+      80
+    );
+    text(
+      "All units in this simulator are arbituary, A1 is fixed to be 30 a.u.",
+      400,
       100
     );
-    text("All units in this simulator are arbituary, A1 is fixed to be 30 a.u.", 400, 120);
+    text("A1 and A2 is dependent on v1  and v2 (Continuity Eq.)", 400, 120);
+    text(
+      "This simulator does not allow dependent variable to be ρ or g",
+      400,
+      140
+    );
 
     // Highlight active dependent variable
     fill(0, 255, 255, 123);
