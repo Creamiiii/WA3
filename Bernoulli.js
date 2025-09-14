@@ -37,6 +37,7 @@ class Bernoulli {
   iterate() {
     background(255);
 
+    // Show sliders
     this.P1_SLIDER.show();
     this.P2_SLIDER.show();
     this.v1_SLIDER.show();
@@ -327,6 +328,7 @@ class Bernoulli {
   }
 
   init() {
+    // Hide sliders, reset variables and sliders
     this.P1_SLIDER.hide();
     this.P2_SLIDER.hide();
     this.v1_SLIDER.hide();
