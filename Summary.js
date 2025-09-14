@@ -1,4 +1,5 @@
 class Summary {
+  //Summary page
   display() {
     background(255);
 
@@ -27,5 +28,11 @@ class Summary {
     text("        = √(2(P2 - P1 + ρg(h2 - h1) + 0.5ρv2²) / ρ)", 75, 350);
     text("-  ρ  = (P1 - P2) / (0.5(v2² - v1²) + g(h2 - h1))", 75, 370);
     text("-  g  = (P1 - P2 + 0.5ρ(v1² - v2²)) / ρ(h2 - h1)", 75, 390);
+
+    text(
+      "A is cross-sectional area, v is velocity, P is pressure, ρ is density, g is gravitational acceleration",
+      75,
+      480
+    );
   }
 }
